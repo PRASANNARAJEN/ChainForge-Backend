@@ -13,6 +13,13 @@ app.use(cors({
     origin: 'https://chain-forge-forntend-griz.vercel.app/',  // Replace with your frontend's URL
     credentials: true,
 }));
+
+
+app.options('*', cors({
+    origin: 'https://chain-forge-forntend-griz.vercel.app',
+    credentials: true,
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes         );
