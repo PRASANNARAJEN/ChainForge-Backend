@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.options('*', cors({
-    origin: 'https://chain-forge-forntend-griz.vercel.app',
+    origin: 'https://chain-forge-forntend-griz.vercel.app/',
     credentials: true,
 }));
 
