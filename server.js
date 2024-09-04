@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: 'https://chain-forge-forntend-byo93l4mc-skmnks-projects.vercel.app/',  // Replace with your frontend's URL
+    origin: 'https://chain-forge-forntend-griz.vercel.app/',  // Replace with your frontend's URL
     credentials: true,
 }));
 app.use(express.json());
